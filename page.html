@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For You</title>
+
+    <link rel="stylesheet" href="page.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>SPECIAL FOR YOU</h1>
+
+    <div class="music-player">
+      <!-- Album Cover -->
+      <div class="album-cover">
+        <span></span>
+      </div>
+
+      <!-- Info Lagu -->
+      <div class="song-info">
+        <p class="device">MyLove</p>
+        <h2>Home Is Who You Are</h2>
+        <p class="artist">Paul Partohap</p>
+      </div>
+
+      <!-- Progress Bar -->
+      <div class="progress-container">
+        <span class="current-time">0:00</span>
+        <div class="progress-bar">
+          <div class="progress" id="progress"></div>
+        </div>
+        <span class="total-time">0:00</span>
+      </div>
+
+      <!-- Kontrol Tombol -->
+      <div class="controls">
+        <button class="prev-btn">⏮</button>
+        <button class="play-btn" id="playPauseBtn">⏯</button>
+        <button class="next-btn">⏭</button>
+      </div>
+
+      <!-- Kontrol Volume
+        <div class="volume-control">
+            <input type="range" min="0" max="100" value="50" id="volumeSlider">
+        </div>  -->
+
+      <!-- Audio Element -->
+      <audio id="audio" src="mp3/sound.mp3"></audio>
+    </div>
+
+    <div class="greet">
+      <p>
+        Selamat ulang tahun yang ke 19 Tahun cintaa, udah ngga kerasa nih kamu
+        ternyata udah makin dewasa, semoga dengan kamu bertambahnya umur kamu
+        bisa makin lebih pinter, baik dan tidak lupa makin lebih cantikk
+        bangett, semoga wishlist yang kamu inginkan semakin terwujud yaaa <br />
+        LOV UUU MY SWEETIE
+      </p>
+      <br />
+      <p>
+        btw aku ada sesuatu nihh, kalo kamu mauu liat pencet aja itu tombol
+        dibawah
+      </p>
+      <br />
+      <a href="flowers/index.html" class="btn-m">LOVE</a>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

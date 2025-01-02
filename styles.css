@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Fredoka:wght@300..700&family=Italiana&family=Love+Ya+Like+A+Sister&family=Luckiest+Guy&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+body {
+  font-family: "Sour Gummy", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url(img/back1.jpg);
+  background-size: cover;
+  background-position: center; /* Menambahkan posisi latar belakang agar tetap terfokus */
+  background-attachment: fixed; /* Agar gambar latar belakang tetap saat scroll */
+}
+
+.envelope {
+  font-size: 2rem;
+  cursor: pointer;
+  color: rgb(217, 234, 253);
+  background-color: rgb(255, 107, 181);
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 25px;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  transition: transform 0.3s ease; /* Efek transisi */
+}
+
+.envelope:hover {
+  transform: scale(1.1); /* Efek zoom saat hover */
+}
+
+.box-text {
+  color: rgb(251, 158, 198);
+  display: none;
+  padding: 12%;
+  background-color: #D9EAFD;
+  border-radius: 30px;
+  max-width: 300px;
+  text-align: center;
+  transform: rotateY(90deg);
+  transition: transform 0.6s ease;
+  position: relative;
+}
+
+.box-text h1 {
+  margin-top: 0;
+  padding-top: 0;
+  position: absolute;
+  font-size: 1.5rem;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.box-text h2 {
+  font-size: 3rem; /* Menurunkan ukuran font untuk responsivitas */
+}
+
+.box-text p {
+  padding-top: 10%;
+  font-size: 18px;
+}
+
+.btn {
+  color: white;
+  background-color: #ff69b4;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 25px;
+  text-decoration: none;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: #ff1493;
+}
+
+.box-text.show {
+  display: block;
+  transform: rotateY(0deg);
+}
+
+.envelope.hide {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+  }
+
+  .envelope {
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    display: inline-block;
+    margin: 0 auto;
+  }
+
+  .box-text {
+    padding: 20px; /* Menambah padding lebih banyak agar box lebih besar */
+    max-width: 100%; /* Membuat box lebih lebar */
+    background-color: #D9EAFD;
+    border-radius: 30px;
+    text-align: center;
+    color: rgb(251, 158, 198);
+    display: none;
+    transform: rotateY(90deg);
+    transition: transform 0.6s ease;
+    position: relative;
+    font-size: 1.4rem; /* Meningkatkan ukuran font di dalam box-text */
+  }
+
+  .box-text h1 {
+    font-size: 20px; /* Membesarkan ukuran font h1 */
+    margin: 0;
+  }
+
+  .box-text h2 {
+    padding-top: 70px;
+    font-size: 40px; /* Membesarkan ukuran font h2 */
+  }
+
+  .box-text p {
+    font-size: 20; /* Membesarkan ukuran font dalam paragraf */
+    padding-top: 5%;
+    padding-bottom: 27%;
+  }
+
+  .btn {
+    font-size: 20px;
+    margin-top: 100%;
+  }
+}
